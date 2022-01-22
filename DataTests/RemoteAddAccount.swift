@@ -28,7 +28,7 @@ class RemoteAddAccountTests: XCTestCase {
 
 
 
-    func testExample() {
+    func test_add_should_call_httpClient_with_correct_url() {
         let url = URL(string: "https://any-url.com.br")!
         let httpClientSpy = HttpClientSpy()
         let sut = RemoteAddAccount(url: url, httpClient: httpClientSpy )
