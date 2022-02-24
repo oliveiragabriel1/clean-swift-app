@@ -1,9 +1,4 @@
-//
-//  DataTests.swift
-//  DataTests
-//
-//  Created by Gabriel Oliveira on 22/01/22.
-//
+
 
 import XCTest
 import Domain
@@ -47,14 +42,25 @@ class RemoteAddAccountTests: XCTestCase {
         })
         
     }
-    
+  
     func test_add_should_complete_with_error_if_client_complete_with_invalid_data() {
 
         let (sut, httpClientSpy) = makeSut()
         expect(sut, completeWith: .failure(.unexpected), when: {
             httpClientSpy.completeWithData(makeInvalidData())
         })
-       
+    }
+    
+    
+    func test_add_should_not_complete_if_sut_has_been_deallocated() {
+
+        let httpClientSpy = HttpClientSpy()
+        var sut: RemoteAddAccount? = RemoteAddAccount(url: makeUrl(), httpClient: httpClientSpy )
+        var result: Result<AccountModel, DomainError>?
+        sut?.add(addAccountModel: makeAddAccountModel()){ result = $0 }
+        sut = nil
+        httpClientSpy.completeWithError(.noConectivity)
+        XCTAssertNil(result)
         
     }
     
