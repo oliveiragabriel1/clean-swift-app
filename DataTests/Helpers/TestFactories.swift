@@ -11,6 +11,9 @@ import Foundation
 func makeInvalidData() -> Data {
     return Data("invalid_data".utf8)
 }
+func makeEmptyData() -> Data {
+    return Data()
+}
 func makeValidData() -> Data {
     return Data("{\"name\":\"Gabriel\"}".utf8)
 }
