@@ -36,6 +36,10 @@
 		4E975F6327CA685F00D97675 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7CBE06279CA37B00C586C5 /* Data.framework */; };
 		4E975F7A27CAD04C00D97675 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975F7227CAD04C00D97675 /* Presentation.framework */; };
 		4E975F7F27CAD04C00D97675 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F7E27CAD04C00D97675 /* SignUpPresenterTests.swift */; };
+		4E975F8827CADEF600D97675 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F8727CADEF600D97675 /* SignUpPresenter.swift */; };
+		4E975F8927CADF1F00D97675 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7CBDF6279CA16000C586C5 /* Domain.framework */; };
+		4E975F8A27CADF1F00D97675 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7CBDF6279CA16000C586C5 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E975F9027CADFBB00D97675 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F8F27CADFBB00D97675 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,13 @@
 			remoteGlobalIDString = 4E975F7127CAD04C00D97675;
 			remoteInfo = Presentation;
 		};
+		4E975F8B27CADF1F00D97675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E7CBDDE279CA09400C586C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7CBDF5279CA16000C586C5;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +127,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4E975F4927C82F1300D97675 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E975F8D27CADF1F00D97675 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E975F8A27CADF1F00D97675 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +171,8 @@
 		4E975F7227CAD04C00D97675 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E975F7927CAD04C00D97675 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E975F7E27CAD04C00D97675 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		4E975F8727CADEF600D97675 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		4E975F8F27CADFBB00D97675 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E975F8927CADF1F00D97675 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +431,8 @@
 		4E975F7327CAD04C00D97675 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4E975F8E27CADFA100D97675 /* Views */,
+				4E975F9127CAE03900D97675 /* Presenters */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -413,9 +440,33 @@
 		4E975F7D27CAD04C00D97675 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E975F7E27CAD04C00D97675 /* SignUpPresenterTests.swift */,
+				4E975F9227CAE21500D97675 /* Presenters */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		4E975F8E27CADFA100D97675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E975F8F27CADFBB00D97675 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E975F9127CAE03900D97675 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4E975F8727CADEF600D97675 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		4E975F9227CAE21500D97675 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4E975F7E27CAD04C00D97675 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,10 +628,12 @@
 				4E975F6E27CAD04C00D97675 /* Sources */,
 				4E975F6F27CAD04C00D97675 /* Frameworks */,
 				4E975F7027CAD04C00D97675 /* Resources */,
+				4E975F8D27CADF1F00D97675 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E975F8C27CADF1F00D97675 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -638,6 +691,7 @@
 					};
 					4E975F7127CAD04C00D97675 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					4E975F7827CAD04C00D97675 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -797,6 +851,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E975F8827CADEF600D97675 /* SignUpPresenter.swift in Sources */,
+				4E975F9027CADFBB00D97675 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,6 +906,11 @@
 			isa = PBXTargetDependency;
 			target = 4E975F7127CAD04C00D97675 /* Presentation */;
 			targetProxy = 4E975F7B27CAD04C00D97675 /* PBXContainerItemProxy */;
+		};
+		4E975F8C27CADF1F00D97675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7CBDF5279CA16000C586C5 /* Domain */;
+			targetProxy = 4E975F8B27CADF1F00D97675 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1262,6 +1323,7 @@
 		4E975F8227CAD04C00D97675 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1284,6 +1346,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1291,6 +1354,7 @@
 		4E975F8327CAD04C00D97675 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1320,6 +1384,7 @@
 		4E975F8527CAD04C00D97675 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1336,6 +1401,7 @@
 		4E975F8627CAD04C00D97675 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

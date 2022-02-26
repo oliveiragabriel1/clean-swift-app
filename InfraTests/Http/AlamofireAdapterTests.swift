@@ -5,7 +5,7 @@ import Data
 import Infra
 
 class AlamofireAdapterTests: XCTestCase {
-
+    
     func test_post_should_make_request_with_valid_url_and_method() {
         let url = makeUrl()
         
@@ -21,7 +21,7 @@ class AlamofireAdapterTests: XCTestCase {
             XCTAssertNil(request.httpBodyStream)
         }
     }
-
+    
     func test_post_should_complete_with_error_when_request_completes_with_error() {
         expectResult(.failure(.noConectivity), when: (data: nil, response: nil, error: makeError()))
     }
@@ -54,7 +54,7 @@ class AlamofireAdapterTests: XCTestCase {
         expectResult(.failure(.noConectivity), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 300), error: nil))
         expectResult(.failure(.noConectivity), when: (data: makeValidData(), response: makeHttpResponse(statusCode: 100), error: nil))
     }
-   
+    
 }
 
 /*
