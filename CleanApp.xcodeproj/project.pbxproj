@@ -21,6 +21,8 @@
 		4E7CBE26279DF69200C586C5 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CBE25279DF69200C586C5 /* HttpPostClient.swift */; };
 		4E8601C527CBEB64007C7654 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975F7227CAD04C00D97675 /* Presentation.framework */; };
 		4E8601C627CBEB64007C7654 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975F7227CAD04C00D97675 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E8601CB27CBF216007C7654 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8601CA27CBF216007C7654 /* SignUpViewController.swift */; };
+		4E8601D027CBF375007C7654 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8601CF27CBF375007C7654 /* SignUp.storyboard */; };
 		4E975F2527C82AC200D97675 /* TestExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2427C82AC200D97675 /* TestExtentions.swift */; };
 		4E975F2727C82B4200D97675 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2627C82B4200D97675 /* TestFactories.swift */; };
 		4E975F2A27C82BEB00D97675 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2927C82BEB00D97675 /* HttpClientSpy.swift */; };
@@ -197,6 +199,8 @@
 		4E7CBE21279DF53700C586C5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4E7CBE23279DF5F500C586C5 /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		4E7CBE25279DF69200C586C5 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
+		4E8601CA27CBF216007C7654 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4E8601CF27CBF375007C7654 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		4E975F2427C82AC200D97675 /* TestExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtentions.swift; sourceTree = "<group>"; };
 		4E975F2627C82B4200D97675 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		4E975F2927C82BEB00D97675 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -609,6 +613,8 @@
 		4E975FB827CBE80200D97675 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4E8601CA27CBF216007C7654 /* SignUpViewController.swift */,
+				4E8601CF27CBF375007C7654 /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -993,6 +999,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8601D027CBF375007C7654 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,6 +1106,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8601CB27CBF216007C7654 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1690,6 +1698,7 @@
 		4E975FC727CBE80200D97675 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1722,6 +1731,7 @@
 		4E975FC827CBE80200D97675 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1753,6 +1763,7 @@
 		4E975FCA27CBE80200D97675 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1770,6 +1781,7 @@
 		4E975FCB27CBE80200D97675 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
