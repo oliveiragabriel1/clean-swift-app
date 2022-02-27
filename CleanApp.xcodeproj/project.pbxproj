@@ -45,6 +45,7 @@
 		4E975F9827CB16A000D97675 /* TestExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2427C82AC200D97675 /* TestExtentions.swift */; };
 		4E975F9A27CB184800D97675 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F9927CB184800D97675 /* LoadingView.swift */; };
 		4E975FA027CBCE6700D97675 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F9F27CBCE6700D97675 /* SignUpViewModel.swift */; };
+		4E975FA227CBCED800D97675 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975FA127CBCED800D97675 /* SignUpMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,7 @@
 		4E975F9427CAE47600D97675 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		4E975F9927CB184800D97675 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4E975F9F27CBCE6700D97675 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		4E975FA127CBCED800D97675 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				4E975F8727CADEF600D97675 /* SignUpPresenter.swift */,
+				4E975FA127CBCED800D97675 /* SignUpMapper.swift */,
 				4E975F9F27CBCE6700D97675 /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
@@ -878,6 +881,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E975FA227CBCED800D97675 /* SignUpMapper.swift in Sources */,
 				4E975F8827CADEF600D97675 /* SignUpPresenter.swift in Sources */,
 				4E975F9A27CB184800D97675 /* LoadingView.swift in Sources */,
 				4E975FA027CBCE6700D97675 /* SignUpViewModel.swift in Sources */,
