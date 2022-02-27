@@ -1,9 +1,3 @@
-//
-//  Model.swift
-//  Domain
-//
-//  Created by Gabriel Oliveira on 23/01/22.
-//
 
 import Foundation
 
