@@ -19,6 +19,8 @@
 		4E7CBE22279DF53700C586C5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CBE21279DF53700C586C5 /* Model.swift */; };
 		4E7CBE24279DF5F500C586C5 /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CBE23279DF5F500C586C5 /* RemoteAddAccount.swift */; };
 		4E7CBE26279DF69200C586C5 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7CBE25279DF69200C586C5 /* HttpPostClient.swift */; };
+		4E8601C527CBEB64007C7654 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975F7227CAD04C00D97675 /* Presentation.framework */; };
+		4E8601C627CBEB64007C7654 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975F7227CAD04C00D97675 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E975F2527C82AC200D97675 /* TestExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2427C82AC200D97675 /* TestExtentions.swift */; };
 		4E975F2727C82B4200D97675 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2627C82B4200D97675 /* TestFactories.swift */; };
 		4E975F2A27C82BEB00D97675 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2927C82BEB00D97675 /* HttpClientSpy.swift */; };
@@ -69,6 +71,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4E7CBDF5279CA16000C586C5;
 			remoteInfo = Domain;
+		};
+		4E8601C727CBEB64007C7654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E7CBDDE279CA09400C586C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E975F7127CAD04C00D97675;
+			remoteInfo = Presentation;
 		};
 		4E975F3C27C82DBF00D97675 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,6 +145,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4E7CBE1D279CA43C00C586C5 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E8601C927CBEB64007C7654 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E8601C627CBEB64007C7654 /* Presentation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8601C527CBEB64007C7654 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,10 +825,12 @@
 				4E975FB327CBE80200D97675 /* Sources */,
 				4E975FB427CBE80200D97675 /* Frameworks */,
 				4E975FB527CBE80200D97675 /* Resources */,
+				4E8601C927CBEB64007C7654 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4E8601C827CBEB64007C7654 /* PBXTargetDependency */,
 			);
 			name = UI;
 			productName = UI;
@@ -1100,6 +1123,11 @@
 			target = 4E7CBDF5279CA16000C586C5 /* Domain */;
 			targetProxy = 4E7CBE1E279CA43C00C586C5 /* PBXContainerItemProxy */;
 		};
+		4E8601C827CBEB64007C7654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E975F7127CAD04C00D97675 /* Presentation */;
+			targetProxy = 4E8601C727CBEB64007C7654 /* PBXContainerItemProxy */;
+		};
 		4E975F3D27C82DBF00D97675 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4E975F3227C82DBF00D97675 /* Infra */;
@@ -1290,6 +1318,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1321,6 +1350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1351,6 +1381,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1382,6 +1413,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1399,6 +1431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.DataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1416,6 +1449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.DataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1446,6 +1480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1477,6 +1512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1494,6 +1530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.InfraTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1511,6 +1548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.InfraTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1527,6 +1565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.UseCasesIntegrationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1543,6 +1582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.UseCasesIntegrationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1573,6 +1613,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1604,6 +1645,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1621,6 +1663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.PresentationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1638,6 +1681,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.PresentationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1668,6 +1712,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1699,6 +1744,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1715,6 +1761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1731,6 +1778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.oliveira-gabriel.UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
