@@ -445,6 +445,39 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		4E8601D127CC050D007C7654 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4E8601CA27CBF216007C7654 /* SignUpViewController.swift */,
+				4E8601CF27CBF375007C7654 /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		4E8601D227CC0516007C7654 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		4E8601D327CC054E007C7654 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4E8601D127CC050D007C7654 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4E8601D427CC0559007C7654 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4E8601D227CC0516007C7654 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		4E975F2327C82A7700D97675 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,8 +646,7 @@
 		4E975FB827CBE80200D97675 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4E8601CA27CBF216007C7654 /* SignUpViewController.swift */,
-				4E8601CF27CBF375007C7654 /* SignUp.storyboard */,
+				4E8601D327CC054E007C7654 /* Scenes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -622,7 +654,7 @@
 		4E975FC227CBE80200D97675 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */,
+				4E8601D427CC0559007C7654 /* Scenes */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
