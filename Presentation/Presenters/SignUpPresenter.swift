@@ -14,6 +14,7 @@ public class SignUpPresenter {
         self.addAccount = addAccount
         self.loadingView = loadingView
     }
+    
     public func signUp(viewModel: SignUpViewModel) {
         
         if let message = validade(viewModel: viewModel) {
