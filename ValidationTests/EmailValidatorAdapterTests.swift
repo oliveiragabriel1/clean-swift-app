@@ -21,4 +21,12 @@ class EmailValidatorAdapterTests: XCTestCase {
         XCTAssertFalse(sut.isValid(email: "@rr.com"))
     }
 
+    func test_valid_emails() {
+        let sut = EmailValidatorAdapter()
+        XCTAssertTrue(sut.isValid(email: "gabriel@gmail.com"))
+        XCTAssertTrue(sut.isValid(email: "gabriel@hotmail.com"))
+        XCTAssertTrue(sut.isValid(email: "gabriel@hotmail.com.br"))
+        XCTAssertTrue(sut.isValid(email: "gabriel@bol.com"))
+        XCTAssertTrue(sut.isValid(email: "gabriel@icloud.com"))
+    }
 }
