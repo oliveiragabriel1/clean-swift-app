@@ -21,7 +21,7 @@ public class SignUpPresenter {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         } else {
             loadingView.display(viewModel: LoadingViewModel(isLoading: true))
-            addAccount.add(addAccountModel: SignUpMapper.toAddAccountModel(viewModel: viewModel)) { [weak self] result in
+            addAccount.add(addAccountModel: viewModel.toAddAccountModel()) { [weak self] result in
                 guard let self = self else { return }
                 switch result {
                 case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Algo inesperado aconteceu, tente novamente em alguns instantes."))
