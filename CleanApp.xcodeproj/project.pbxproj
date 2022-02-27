@@ -42,6 +42,7 @@
 		4E975F9027CADFBB00D97675 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F8F27CADFBB00D97675 /* AlertView.swift */; };
 		4E975F9527CAE47600D97675 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F9427CAE47600D97675 /* EmailValidator.swift */; };
 		4E975F9727CB0D6A00D97675 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2C27C82C5000D97675 /* AccountModelFactory.swift */; };
+		4E975F9827CB16A000D97675 /* TestExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975F2427C82AC200D97675 /* TestExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -875,6 +876,7 @@
 			files = (
 				4E975F9727CB0D6A00D97675 /* AccountModelFactory.swift in Sources */,
 				4E975F7F27CAD04C00D97675 /* SignUpPresenterTests.swift in Sources */,
+				4E975F9827CB16A000D97675 /* TestExtentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
