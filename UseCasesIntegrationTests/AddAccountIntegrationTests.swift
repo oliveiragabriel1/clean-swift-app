@@ -35,7 +35,7 @@ class AddAccountIntegrationTests: XCTestCase {
              default:
                  XCTFail("Expect success got \(result) instead")
              }
-             exp.fulfill()
+             exp2.fulfill()
          }
          wait(for: [exp2], timeout: 15)
      }
