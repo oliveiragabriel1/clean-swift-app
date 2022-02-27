@@ -19,9 +19,7 @@ class AddAccountIntegrationTests: XCTestCase {
              switch result {
              case .failure: XCTFail("Expect success got \(result) instead")
              case .success(let account):
-                 XCTAssertNotNil(account.id)
-                 XCTAssertEqual(account.name, addAccountModel.name)
-                 XCTAssertEqual(account.email, addAccountModel.email)
+                 XCTAssertNotNil(account.accessToken)
                 
              }
              exp.fulfill()
