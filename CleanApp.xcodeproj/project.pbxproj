@@ -59,6 +59,7 @@
 		4E975FBF27CBE80200D97675 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975FB727CBE80200D97675 /* UI.framework */; };
 		4E975FC427CBE80200D97675 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */; };
 		4EA8A67427CC0DDC000888C0 /* UIViewControllerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */; };
+		4EA8A67627CC0EF9000888C0 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8A67527CC0EF8000888C0 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +234,7 @@
 		4E975FBE27CBE80200D97675 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtentions.swift; sourceTree = "<group>"; };
+		4EA8A67527CC0EF8000888C0 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */,
+				4EA8A67527CC0EF8000888C0 /* Storyboarded.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1162,6 +1165,7 @@
 			files = (
 				4EA8A67427CC0DDC000888C0 /* UIViewControllerExtentions.swift in Sources */,
 				4E8601CB27CBF216007C7654 /* SignUpViewController.swift in Sources */,
+				4EA8A67627CC0EF9000888C0 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
