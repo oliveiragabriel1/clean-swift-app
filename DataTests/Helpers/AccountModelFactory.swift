@@ -1,10 +1,3 @@
-//
-//  AccountModelFactory.swift
-//  DataTests
-//
-//  Created by Gabriel Oliveira on 24/02/22.
-//
-
 import Foundation
 import Domain
 

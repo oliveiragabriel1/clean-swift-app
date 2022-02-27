@@ -10,7 +10,7 @@ class SignUpPresenterTests: XCTestCase {
         let sut = makeSut(alertView: alertViewSpy)
         
         let exp = expectation(description: "waiting")
-       
+        
         alertViewSpy.observe{ viewModel in
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Nome"))
             exp.fulfill()
@@ -24,7 +24,7 @@ class SignUpPresenterTests: XCTestCase {
         
         
         let exp = expectation(description: "waiting")
-       
+        
         alertViewSpy.observe{ viewModel in
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Email"))
             exp.fulfill()
@@ -35,10 +35,10 @@ class SignUpPresenterTests: XCTestCase {
     func test_signUp_should_show_error_message_if_password_is_not_provided() {
         let alertViewSpy = AlertViewSpy()
         let sut = makeSut(alertView: alertViewSpy)
-    
+        
         
         let exp = expectation(description: "waiting")
-       
+        
         alertViewSpy.observe{ viewModel in
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Senha"))
             exp.fulfill()
@@ -52,7 +52,7 @@ class SignUpPresenterTests: XCTestCase {
         let sut = makeSut(alertView: alertViewSpy)
         
         let exp = expectation(description: "waiting")
-       
+        
         alertViewSpy.observe{ viewModel in
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Confirmar Senha"))
             exp.fulfill()
@@ -138,7 +138,7 @@ class SignUpPresenterTests: XCTestCase {
         let loadingViewSpy = LoadingViewSpy()
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(addAccount: addAccountSpy, loadingView: loadingViewSpy)
-       
+        
         let exp = expectation(description: "waiting")
         
         loadingViewSpy.observe{ viewModel in
@@ -155,7 +155,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, LoadingViewModel(isLoading: false))
             exp2.fulfill()
         }
-            
+        
         addAccountSpy.completeWithError(.unexpected)
         wait(for: [exp2], timeout: 1)
     }
@@ -164,13 +164,9 @@ class SignUpPresenterTests: XCTestCase {
 
 extension SignUpPresenterTests {
     
-    
     func makeSut( alertView: AlertViewSpy = AlertViewSpy(), emailValidator: EmailValidatorSpy = EmailValidatorSpy(),addAccount: AddAccountSpy = AddAccountSpy(), loadingView: LoadingViewSpy = LoadingViewSpy() ,file: StaticString = #filePath, line: UInt = #line) -> SignUpPresenter {
         let sut = SignUpPresenter(alertView: alertView, emailValidator: emailValidator, addAccount: addAccount, loadingView: loadingView)
         checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }
-    
-    
-    
 }

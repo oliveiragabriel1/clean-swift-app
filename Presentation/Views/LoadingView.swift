@@ -1,10 +1,3 @@
-//
-//  LoadingView.swift
-//  Presentation
-//
-//  Created by Gabriel Oliveira on 26/02/22.
-//
-
 import Foundation
 
 public protocol LoadingView {

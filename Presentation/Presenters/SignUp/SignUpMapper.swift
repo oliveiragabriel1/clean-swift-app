@@ -1,10 +1,3 @@
-//
-//  SignUpMapper.swift
-//  Presentation
-//
-//  Created by Gabriel Oliveira on 27/02/22.
-//
-
 import Foundation
 import Domain
 
