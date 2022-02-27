@@ -58,6 +58,7 @@
 		4E975FB127CBD31800D97675 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975FB027CBD31800D97675 /* TestFactories.swift */; };
 		4E975FBF27CBE80200D97675 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E975FB727CBE80200D97675 /* UI.framework */; };
 		4E975FC427CBE80200D97675 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */; };
+		4EA8A67427CC0DDC000888C0 /* UIViewControllerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 		4E975FB727CBE80200D97675 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E975FBE27CBE80200D97675 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E975FC327CBE80200D97675 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
+		4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +490,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		4E8601D827CC0D87007C7654 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EA8A67327CC0DDC000888C0 /* UIViewControllerExtentions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4E975F2327C82A7700D97675 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +666,7 @@
 		4E975FB827CBE80200D97675 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4E8601D827CC0D87007C7654 /* Helpers */,
 				4E8601D327CC054E007C7654 /* Scenes */,
 			);
 			path = UI;
@@ -1149,6 +1160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA8A67427CC0DDC000888C0 /* UIViewControllerExtentions.swift in Sources */,
 				4E8601CB27CBF216007C7654 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
